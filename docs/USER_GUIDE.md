@@ -2,6 +2,8 @@
 
 How to run a class, button by button. The class bot is **t.me/L6SToolBot** (if you made your own bot, use its link).
 
+Prefer to watch? The [video tutorial](https://youtu.be/h4aG33HNhrA) shows every button below in action ([Telegram bot](https://youtu.be/h4aG33HNhrA?t=102), [lecturer tools](https://youtu.be/h4aG33HNhrA?t=180), [Power BI dashboard](https://youtu.be/h4aG33HNhrA?t=250)).
+
 ## Before class (lecturer)
 
 1. Double-click **`START_BOT.bat`** and wait for **BOT IS RUNNING**. Keep the window open.

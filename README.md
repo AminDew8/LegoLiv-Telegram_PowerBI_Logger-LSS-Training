@@ -8,6 +8,16 @@ Built for the Lean Six Sigma "Legoliv" simulation at Universiti Sains Malaysia (
 
 ---
 
+## Video tutorial
+
+[![Watch the video tutorial on YouTube](docs/images/11-video-tutorial.jpg)](https://youtu.be/h4aG33HNhrA)
+
+**[Watch the 7-minute tutorial on YouTube](https://youtu.be/h4aG33HNhrA).** It shows the whole project in action: the launcher, the Telegram bot, the lecturer tools (`/session`, `/manage`) and the Power BI dashboard, button by button. The numbers in the video are demo data.
+
+Jump straight to a part: [Launcher](https://youtu.be/h4aG33HNhrA?t=72) · [Telegram bot](https://youtu.be/h4aG33HNhrA?t=102) · [Lecturer tools](https://youtu.be/h4aG33HNhrA?t=180) · [Power BI dashboard](https://youtu.be/h4aG33HNhrA?t=250) · [What was upgraded](https://youtu.be/h4aG33HNhrA?t=300)
+
+---
+
 ## How it works (in 30 seconds)
 
 ```
@@ -41,7 +51,7 @@ Built for the Lean Six Sigma "Legoliv" simulation at Universiti Sains Malaysia (
 4. Double-click **`START_BOT.bat`**. The first time, it asks for your **bot token** and **Push URL** and remembers them.
 5. Open the bot in Telegram, press **Start**, choose the wave, and begin.
 
-Full details: **[docs/INSTALLATION.md](docs/INSTALLATION.md)** and **[docs/USER_GUIDE.md](docs/USER_GUIDE.md)**.
+Full details: **[docs/INSTALLATION.md](docs/INSTALLATION.md)** and **[docs/USER_GUIDE.md](docs/USER_GUIDE.md)**. Prefer to watch? See the **[video tutorial](#video-tutorial)**.
 
 > Each person who reuses this project needs their **own** bot (create it with `@BotFather` in Telegram) and their **own** Power BI streaming dataset. The token and Push URL are secrets: they live in `config.ini`, which is excluded from Git on purpose.
 

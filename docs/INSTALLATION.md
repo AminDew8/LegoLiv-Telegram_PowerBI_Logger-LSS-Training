@@ -2,6 +2,8 @@
 
 Works on **Windows 10 and 11**. You need an internet connection and a Microsoft account (for Power BI).
 
+Prefer to watch? The [video tutorial](https://youtu.be/h4aG33HNhrA?t=72) shows the launcher and first start step by step.
+
 ## What gets installed
 
 | Program | Used for | Installed by |
