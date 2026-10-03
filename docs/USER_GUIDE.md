@@ -6,7 +6,7 @@ Prefer to watch? The [video tutorial](https://youtu.be/h4aG33HNhrA) shows every 
 
 ## Before class (lecturer)
 
-1. Double-click **`START_BOT.bat`** and wait for **BOT IS RUNNING**. Keep the window open.
+1. Double-click the **Legoliv Data Logger** shortcut on the Desktop (or **`START_BOT.bat`**) and wait for **BOT IS RUNNING**. Keep the window open.
 2. Open the dashboard in Power BI (Desktop or app.powerbi.com).
 
 ## Telegram - what each button does

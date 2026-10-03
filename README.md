@@ -34,7 +34,7 @@ Jump straight to a part: [Launcher](https://youtu.be/h4aG33HNhrA?t=72) · [Teleg
 | File / folder | What it is |
 |---|---|
 | `legobot.py` | The Telegram bot (all the logic). |
-| `INSTALL.bat` | One-click installer for Python, Telegram Desktop, Power BI Desktop and the bot's libraries. |
+| `INSTALL.bat` | One-click installer for Python, Telegram Desktop, Power BI Desktop and the bot's libraries. It also adds a Desktop shortcut for the bot. |
 | `START_BOT.bat` | Starts the bot. |
 | `BUILD_EXE.bat` | Optional: builds `legobot.exe` so other PCs need no Python. |
 | `config.ini.example` | Template for your private settings (token + Push URL). |
@@ -46,9 +46,9 @@ Jump straight to a part: [Launcher](https://youtu.be/h4aG33HNhrA?t=72) · [Teleg
 ## Quick start
 
 1. **Download** this repository (green **Code** button, then **Download ZIP**) and unzip it.
-2. Double-click **`INSTALL.bat`**. It installs anything missing.
+2. Double-click **`INSTALL.bat`**. It installs anything missing and puts a **Legoliv Data Logger** shortcut on your Desktop.
 3. Follow **[docs/POWERBI_SETUP.md](docs/POWERBI_SETUP.md)** once (about 20 minutes).
-4. Double-click **`START_BOT.bat`**. The first time, it asks for your **bot token** and **Push URL** and remembers them.
+4. Double-click the **Legoliv Data Logger** shortcut on your Desktop (or `START_BOT.bat` in the folder). The first time, it asks for your **bot token** and **Push URL** and remembers them.
 5. Open the bot in Telegram, press **Start**, choose the wave, and begin.
 
 Full details: **[docs/INSTALLATION.md](docs/INSTALLATION.md)** and **[docs/USER_GUIDE.md](docs/USER_GUIDE.md)**. Prefer to watch? See the **[video tutorial](#video-tutorial)**.
@@ -75,6 +75,7 @@ The original bot asked the lecturer to delete all data between classes and to ty
 | 10 | **One-click installer** and a start script. | A non-technical user can set it up. |
 | 11 | **Optional admin PIN** for `/session` and `/manage`. | Students cannot rename or delete data. |
 | 12 | **Styled session dropdown** matching the dashboard theme. | Looks consistent and professional. |
+| 13 | **Desktop shortcut** added automatically at the end of `INSTALL.bat`. | The lecturer starts the bot with one double-click from the Desktop. |
 
 Calculations (labour, WIP, finished and shipped costs, selling prices per RUN, LMPU) are unchanged from the original.
 

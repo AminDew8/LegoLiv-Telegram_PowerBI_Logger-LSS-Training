@@ -24,7 +24,7 @@ Double-click **`INSTALL.bat`**.
 - A black window shows each step. Programs that are already installed are skipped.
 - If Windows asks "Do you want to allow this app to make changes?", press **Yes**.
 - Power BI Desktop comes from the Microsoft Store. If the automatic install does not finish, the Store page opens: press **Get**.
-- When it says **Finished**, close the window.
+- When it says **Finished**, a shortcut named **Legoliv Data Logger** is on your Desktop (it starts the bot). Close the window.
 
 > If Windows shows a blue "Windows protected your PC" box, press **More info**, then **Run anyway**. This happens for any downloaded script.
 
@@ -51,7 +51,7 @@ Follow **[POWERBI_SETUP.md](POWERBI_SETUP.md)**. You will end with a **Push URL*
 
 ## Step 5 - Start the bot
 
-Double-click **`START_BOT.bat`**.
+Double-click the **Legoliv Data Logger** shortcut on your Desktop (or **`START_BOT.bat`** in the folder).
 
 The first time it asks:
 
@@ -78,3 +78,4 @@ Double-click **`BUILD_EXE.bat`**. It creates `legobot.exe`. Copy that file and `
 | "Python is not installed" | Run `INSTALL.bat` again, or restart the PC after installing Python. |
 | `pip` errors | Check the internet connection and run `INSTALL.bat` again. |
 | Wrong token / URL saved | Open `config.ini` in Notepad, clear the wrong value, save, and start the bot again. |
+| No shortcut on the Desktop | Run `INSTALL.bat` again (safe to repeat), or right-click `START_BOT.bat` and choose **Send to**, then **Desktop (create shortcut)**. |

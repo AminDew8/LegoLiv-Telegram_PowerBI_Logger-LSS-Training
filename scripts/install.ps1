@@ -99,11 +99,32 @@ else {
     Say "Created config.ini. The bot will ask for the Telegram token and Push URL on first start." Green
 }
 
+# ---- Desktop shortcut -------------------------------------------
+Step 7 "Desktop shortcut (start the bot with one double-click)"
+$shortcutOk = $false
+if ($CheckOnly) { Say "Would add the shortcut 'Legoliv Data Logger' to the Desktop" Yellow }
+else {
+    try {
+        $lnk = (New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) 'Legoliv Data Logger.lnk'))
+        $lnk.TargetPath = Join-Path $root 'START_BOT.bat'
+        $lnk.WorkingDirectory = $root
+        $lnk.Description = 'Start the Legoliv Data Logger bot'
+        $icon = Join-Path $PSScriptRoot 'legoliv.ico'
+        if (Test-Path $icon) { $lnk.IconLocation = $icon }
+        $lnk.Save()
+        $shortcutOk = $true
+        Say "Shortcut 'Legoliv Data Logger' added to your Desktop." Green
+    } catch {
+        Say "Could not create the Desktop shortcut ($($_.Exception.Message)). You can still double-click START_BOT.bat." Yellow
+    }
+}
+
 # ---- Done -------------------------------------------------------
 Write-Host ""
 Say "============================================================" Green
 Say "  Finished." Green
 Say "  Next:  1) Do the one-time Power BI setup  -> docs/POWERBI_SETUP.md" Green
-Say "         2) Double-click START_BOT.bat" Green
+if ($shortcutOk) { Say "         2) Double-click the 'Legoliv Data Logger' shortcut on your Desktop" Green }
+else { Say "         2) Double-click START_BOT.bat" Green }
 Say "  The bot link for students:  see docs/USER_GUIDE.md" Green
 Say "============================================================" Green
