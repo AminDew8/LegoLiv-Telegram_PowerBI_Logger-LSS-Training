@@ -1,0 +1,15 @@
+; Copy this file to "config.ini" (same folder as legobot.py / legobot.exe).
+; You can also leave config.ini out: the bot asks for the two values the first
+; time it starts and saves them for you.
+;
+; NEVER upload config.ini to GitHub - it contains secrets (it is in .gitignore).
+
+[legoliv]
+; Token from @BotFather in Telegram (looks like 123456789:ABCdef...)
+telegram_token =
+
+; Push URL of your Power BI streaming dataset (starts with https://api.powerbi.com/)
+powerbi_push_url =
+
+; Optional: a PIN that protects /session and /manage. Leave empty for no PIN.
+; admin_pin = 1234

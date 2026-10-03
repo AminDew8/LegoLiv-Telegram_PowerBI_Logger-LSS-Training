@@ -1,0 +1,22 @@
+# Secrets and live data - never commit these
+config.ini
+config.ini.bak
+ledger.json
+ledger.json.*
+backups/
+
+# Build output
+build/
+dist/
+*.spec
+legobot.exe
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Power BI temp files
+*.pbix.tmp
+.~lock.*
